@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0D0D0D</color>
+    <color name="colorPrimaryAlpha">#000D0D0D</color>
+    <color name="colorAccent">#2190F6</color>
+    <color name="colorAccentAlpha">#002190F6</color>
+    <color name="colorOk">#F6A121</color>
+    <color name="colorOkAlpha">#00F6A121</color>
+    <color name="colorVk">@color/colorAccent</color>
+    <color name="colorVkAlpha">@color/colorAccentAlpha</color>
+    <color name="colorYoutube">#DC1616</color>
+    <color name="colorYoutubeAlpha">#00DC1616</color>
+    <color name="colorComments">#49A8FF</color>
+    <color name="colorCommentEditor">#DFDBDB</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteAlpha">#6FFFFFFF</color>
+</resources>

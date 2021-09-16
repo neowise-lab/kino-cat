@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">KinoCat</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="logo_description">Logo</string>
+    <string name="favlist_icon_description">Favlist Icon</string>
+    <string name="search_icon_description">Search Icon</string>
+    <string name="poster_image_description">Poster Image</string>
+    <string name="film_poster_gradient">Film poster gradient</string>
+    <string name="situative_comedy">Situative comedy</string>
+    <string name="year_2020">2020</string>
+    <string name="contry_usa">USA</string>
+    <string name="anime_hentay">Anime Xentay</string>
+    <string name="favorites">Favorites</string>
+    <string name="watch">Watch</string>
+    <string name="preview_image">Preview image Decription</string>
+    <string name="uzbek">Uzbek</string>
+    <string name="contry_usa_2020">USA   2020</string>
+    <string name="temp_text">
+        But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+        this mistaken idea of denouncing pleasure and praising pain was born and I will give you
+        a complete account of the system, and expound the actupain was born and I will give you
+        a complete account of the system, and expound the actual teachings of the great explorer
+        of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+        pleasure itself, because it is pleasure, but because those who do not know how to pursue
+        pleasure rationally encounter consequences that are extremely painful. Nor again is there
+        anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+        because occasionally circumstances occur in which toil and pain can procure him some great
+        pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise
+    </string>
+    <string name="comments">Comments</string>
+    <string name="temp_comment">
+        of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids
+        pleasure itself, because it is pleasure, but because those who do not know how to pursue
+    </string>
+    <string name="show_nothing">Show nothing</string>
+    <string name="search">Search</string>
+    <string name="description">Description</string>
+    <string name="ratings">Ratings</string>
+    <string name="add_film">Add Film</string>
+
+    <string-array name="genres">
+        <item>Action</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Fantasy</item>
+        <item>Horror</item>
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Thriller</item>
+    </string-array>
+</resources>

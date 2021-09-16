@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="200dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginRight="50dp"
+    android:padding="15dp"
+    android:focusable="true"
+    android:clickable="true"
+    android:background="@drawable/comment_background">
+
+    <TextView
+        android:id="@+id/comment_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:text="\@selena_madison"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:id="@+id/comment_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="13sp"
+        android:textColor="@color/white"
+        android:text="12 Jan 2020"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+    <View
+        android:id="@+id/comment_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/whiteAlpha"
+        android:layout_below="@id/comment_author"/>
+    <TextView
+        android:id="@+id/comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="14sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="@color/white"
+        android:text="@string/temp_comment"
+        android:layout_below="@id/comment_divider"
+        />
+</RelativeLayout>
