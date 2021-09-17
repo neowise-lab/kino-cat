@@ -31,7 +31,6 @@ fun loadImage(context: Context, id: Long, imageView: ImageView) {
     catch (e: IOException) { }
 }
 
-
 fun showSnackbar(view: View, text: String) {
     Snackbar.make(view, text, Snackbar.LENGTH_LONG).show()
 }

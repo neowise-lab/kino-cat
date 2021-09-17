@@ -10,6 +10,8 @@ import com.neowise.kinocat.presentation.fragments.FilmsFragment
 class SearchActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivitySearchBinding
+    private lateinit var filmsFragment: FilmsFragment
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -17,11 +19,10 @@ class SearchActivity : AppCompatActivity() {
         binding = ActivitySearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val fragment = FilmsFragment.getInstance()
-        fragment.search("")
+        filmsFragment = FilmsFragment.getInstance()
 
         binding.searchEdit.addTextChangedListener { editable ->
-            fragment.search(editable?.toString()!!.trim())
+            filmsFragment.search(editable?.toString()!!.trim())
         }
 
         binding.searchBackButton.setOnClickListener {
@@ -30,8 +31,13 @@ class SearchActivity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.film_fragment, fragment)
+            .replace(R.id.film_fragment, filmsFragment)
             .commit()
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+        filmsFragment.search("")
     }
 }

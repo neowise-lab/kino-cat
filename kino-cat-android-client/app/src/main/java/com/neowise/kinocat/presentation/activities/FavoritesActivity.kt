@@ -16,6 +16,8 @@ import com.neowise.kinocat.presentation.fragments.FilmsFragment
 class FavoritesActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFavoritesBinding
+    private lateinit var filmFragment: FilmsFragment
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +25,7 @@ class FavoritesActivity : AppCompatActivity() {
         binding = ActivityFavoritesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val fragment = FilmsFragment.getInstance()
-        fragment.loadFavorites()
+        filmFragment = FilmsFragment.getInstance()
 
         binding.backButton.setOnClickListener {
             finish()
@@ -32,7 +33,12 @@ class FavoritesActivity : AppCompatActivity() {
 
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.film_fragment, fragment)
+            .replace(R.id.film_fragment, filmFragment)
             .commit()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        filmFragment.loadFavorites()
     }
 }

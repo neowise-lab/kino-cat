@@ -74,7 +74,7 @@ class AddActivity : AppCompatActivity() {
     private fun getFilmModel(): Film {
         val name = binding.name.text.toString()
         val url = binding.url.text.toString()
-        val genre = binding.genre.selectedItem as String
+        val genre = binding.genre.selectedItemPosition
         val year = binding.year.text.toString()
         val country = binding.country.text.toString()
         val description = binding.description.text.toString()
@@ -83,7 +83,7 @@ class AddActivity : AppCompatActivity() {
             id = -1L,
             name = name,
             url = url,
-            genre = genre,
+            genre = Genres.values()[genre].code,
             year = if (year == "") 2021 else year.toInt(),
             country = country,
             description = description,
