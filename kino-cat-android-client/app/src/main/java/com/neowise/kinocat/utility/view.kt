@@ -17,7 +17,7 @@ fun View.show() {
     this.visibility = View.VISIBLE
 }
 
-fun loadImage(context: Context, id: Long, imageView: ImageView) {
+fun loadFirebaseImage(context: Context, id: Long, imageView: ImageView) {
     val firebase = FirebaseStorage.getInstance()
     val storageReference = firebase.reference
     try {

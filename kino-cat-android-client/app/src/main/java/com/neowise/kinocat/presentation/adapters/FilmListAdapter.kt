@@ -8,7 +8,8 @@ import com.neowise.kinocat.R
 import com.neowise.kinocat.data.model.Color
 import com.neowise.kinocat.data.model.Film
 import com.neowise.kinocat.databinding.ItemFilmBinding
-import com.neowise.kinocat.utility.loadImage
+import com.neowise.kinocat.utility.loadFirebaseImage
+import com.squareup.picasso.Picasso
 
 class FilmListAdapter(private val selectListener: FilmSelectListener) : RecyclerView.Adapter<FilmListAdapter.FilmViewHolder>() {
 
@@ -53,7 +54,11 @@ class FilmListAdapter(private val selectListener: FilmSelectListener) : Recycler
             binding.year.text = model.year.toString()
             binding.country.text = model.country
 
-            loadImage(itemView.context, model.id, binding.poster)
+            Picasso.get()
+                .load(R.drawable.empty_poster)
+                .into(binding.poster)
+
+            loadFirebaseImage(itemView.context, model.id, binding.poster)
 
             val color = Color.valueOf(model.color)
 

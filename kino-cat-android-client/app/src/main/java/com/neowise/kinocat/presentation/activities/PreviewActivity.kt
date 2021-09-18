@@ -7,7 +7,7 @@ import com.neowise.kinocat.R
 import com.neowise.kinocat.data.model.Film
 import com.neowise.kinocat.databinding.ActivityPreviewBinding
 import com.neowise.kinocat.presentation.viewmodel.PreviewViewModel
-import com.neowise.kinocat.utility.loadImage
+import com.neowise.kinocat.utility.loadFirebaseImage
 import android.content.Intent
 import android.net.Uri
 import com.neowise.kinocat.presentation.viewmodel.AndroidViewModelFactory
@@ -41,7 +41,7 @@ class PreviewActivity : AppCompatActivity() {
         binding.filmCountry.text = film.country
         binding.filmGenreTxt.text = film.genre
 
-        loadImage(this, film.id, binding.previewImage)
+        loadFirebaseImage(this, film.id, binding.previewImage)
 
         binding.searchBackButton.setOnClickListener {
             finish()
